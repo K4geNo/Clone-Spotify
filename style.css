@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar/Header */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.navbar .navbar-container {
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar .navbar-container .logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+}
+
+.navbar .navbar-container ul li {
+    padding: 0 20px;
+}
+
+.navbar .navbar-container ul .navbar-li {
+    padding-left: 40px;
+}
+
+.navbar .navbar-container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .navbar-container ul li a:hover {
+    color: #1DB954;
+}
+
+.navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid white;
+    padding-right: 40px;
+}
+
+/* Conteudo/Main */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/assets/background2.png') center center/cover;
+}
+
+.container .conteudo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1DB954;
+}
+
+.container .conteudo-container h1 {
+    width: 754px;
+    font-size: 104px;
+    line-height: 104px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container .conteudo-container p {
+    width: 700px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.container .conteudo-container button {
+    background-color: var(--background-base, #1ed760);
+    border-radius: 500px;
+    font-size: 14px;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform .1s;
+}
+
+.container .conteudo-container button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 77%;
+    margin: auto;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.footer .footer-content .footer-menu {
+    list-style: none;
+}
+
+.footer .footer-content .footer-menu .footer-menu-item {
+    margin: 25px 0;
+}
+
+.footer .footer-content .footer-menu .footer-menu-item:hover {
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.footer .footer-content .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+
+/* Footer/Socais/Info */
+
+.col-sociais {
+    display: flex;
+}
+
+.col-sociais i {
+    margin: 0 20px;
+    font-size: 1.8rem;
+}
+
+.col-sociais i:hover {
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 77%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.8rem;
+}
+
+.footer-info .footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+    margin: 0 10px;
+}
+
+.footer-info-item:hover {
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.footer-info .copy .country {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    align-items: center;
+}
